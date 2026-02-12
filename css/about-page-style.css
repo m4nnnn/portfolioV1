@@ -59,17 +59,20 @@ header {
 
 /* --- SECTION PRINCIPALE --- */
 .top-section {
+    padding: 60px 10%;
+    background: #ffffff;
+}
+
+.top-img-txt {
     display: flex;
     flex-direction: row; 
     justify-content: center;    
     align-items: center;               
-    padding: 60px 10%;
-    background: #ffffff;
-    gap: 40px;
+    gap: 60px;
 }
 
 .page-title {
-    flex: 2; 
+    flex: 0 1 auto; 
     display: flex;
     flex-direction: column;
 }
@@ -230,10 +233,11 @@ h2{
         gap: 15px;
     }
 
-    .top-section {
+    .top-img-txt {
         flex-direction: column-reverse; 
         padding: 40px 5%;
         text-align: center; 
+        gap: 20px;
     }
 
     .page-title {
