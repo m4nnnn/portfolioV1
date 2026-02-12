@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -15,85 +14,68 @@ html, body {
 
 h1 {
     font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    font-size: clamp(32px, 8vw, 48px);
+    font-weight: 800;
+    font-size: clamp(32px, 5vw, 48px); 
     color: #260101;
-    margin-top: 2.8rem;
+    margin-bottom: 20px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #000000;
-    margin-bottom: 15px;
-}
-
-header{
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-}
-
-.nav-link {
-    background-color: transparent;
-    color: #260101;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease, transform 0.2s ease;
+    line-height: 1.6;
+    color: #000;
 }
 
-ul {
-    text-decoration: none;
+/* --- HEADER & NAV --- */
+header {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 50px;
-    font-size: bold;    
+    gap: 40px;
+    flex-wrap: wrap; 
 }
 
+.nav-link {
+    text-decoration: none;
+    color: #260101;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    transform: scale(1.07);
+    color: #5e0c0c;
+}
+
+/* --- SECTION PRINCIPALE --- */
 .top-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
-}
-
-.top-img-txt {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; 
+    justify-content: center;    
+    align-items: center;               
+    padding: 60px 10%;
+    background: #ffffff;
     gap: 40px;
 }
 
 .page-title {
-    flex: 0 1 auto;
-    text-align: left; 
-    margin: 20px;
-}
-
-.face {
-    flex: 1;
-    max-width: 25%;
-    margin-right: 20rem;
-
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
 }
 
 .introduction-section {
-    padding: 40px 15%;
+    padding: 40px 10%;
     text-align: center;
 }   
 
@@ -115,7 +97,6 @@ img {
     text-align: left;
     margin-bottom: 40px;
 }
-
 
 .skills-container {
     display: flex;
@@ -145,7 +126,6 @@ img {
     height: 150px;
     background-color: #4b0a0a;
 }
-
 
 .skills-icons {
     display: flex;
@@ -220,12 +200,11 @@ h2{
     height: 8px;
     background-color: #ccc;
     transition: background-color 0.5s ease;
-
 }
 
 .button-text {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -245,18 +224,25 @@ h2{
     height: 300px;
 }
 
-/* ---  MOBILE --- */
-@media (max-width: 768px) {
-    
-    .top-img-txt {
-        flex-direction: column; 
-        text-align: center;
+/* ---  MEDIA QUERIES --- */
+@media (max-width: 767px) {
+    .navbar ul {
         gap: 15px;
     }
-    
+
+    .top-section {
+        flex-direction: column-reverse; 
+        padding: 40px 5%;
+        text-align: center; 
+    }
+
+    .page-title {
+        width: 100%;
+        align-items: center; 
+    }
 
     .introduction-section {
-        padding: 40px 5%;
+        padding: 30px 5%; 
     }
 
     .skills-container {
