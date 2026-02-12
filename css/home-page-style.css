@@ -6,17 +6,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 h1 {
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
-    font-size: 48px;
+    font-size: clamp(32px, 5vw, 48px); 
     color: #260101;
     margin-bottom: 20px;
 }
 
-h2{
-    font-family: 'Rubik', sans-serif;
-}
+h2 { font-family: 'Rubik', sans-serif; }
 
 p {
     font-family: 'Roboto', sans-serif;
@@ -25,17 +28,19 @@ p {
     color: #000;
 }
 
+/* --- HEADER & NAV --- */
 header {
     background-color: #fff;
     padding: 20px;
-    text-align: center;
+    width: 100%;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
+    flex-wrap: wrap; 
 }
 
 .nav-link {
@@ -45,6 +50,7 @@ header {
     font-weight: 600;
     font-size: 18px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .nav-link:hover {
@@ -55,7 +61,7 @@ header {
 /* --- SECTION PRINCIPALE --- */
 .top-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     justify-content: center;    
     align-items: center;               
     padding: 60px 10%;
@@ -63,9 +69,8 @@ header {
     gap: 40px;
 }
 
-
 .page-title {
-    flex: 1;
+    flex: 2; 
     display: flex;
     flex-direction: column;
 }
@@ -73,13 +78,6 @@ header {
 .block {
     width: 300px;
     height: 300px; 
-    
-
-    max-width: 90vw;
-    max-height: 90vw;
-    min-width: 200px;
-    min-height: 200px;
-    
     border: 1px solid #222; 
     cursor: pointer;
     image-rendering: pixelated;
@@ -87,113 +85,87 @@ header {
     flex-shrink: 0;
 }
 
-.block:hover{
-    transform: scale(1.05);
-}
-
-.block.is-mined {
-    transform: scale(0.9);
-}
-
-
-.top-img-txt{
-    width: 80%;
-    align-items: baseline;
+.top-img-txt {
     font-size: 20px;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
 
-.top-img-txt-2{
+.top-img-txt-2 {
     margin-top: 30px;
 }
 
-.grass-texture{
-    background-image: url(../img/grass_block_side_512x512.png);
+.grass-texture {
+    background-image: url('../img/grass_block_side_512x512.png');
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.ice-texture{
-    background-image: url(../img/blue_ice_512x512.png);
+.ice-texture {
+    background-image: url('../img/blue_ice_512x512.png');
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.cobblestone-texture{
-    background-image: url(../img/cobblestone_512x512.png);
+.cobblestone-texture {
+    background-image: url('../img/cobblestone_512x512.png');
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.jacko-texture{
-    background-image: url(../img/jack_o_lantern_512x512.png);
+.jacko-texture {
+    background-image: url('../img/jack_o_lantern_512x512.png');
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.mangrove-texture{
-    background-image: url(../img/mangrove_log_top_512x512.png);
+.mangrove-texture {
+    background-image: url('../img/mangrove_log_top_512x512.png');
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.introduction-section {
+.introduction-section, .about-portfolio-projets {
     padding: 40px 10%;
-    background-color: #fff;
-    margin-top: 40px;
 }
-
-.about-portfolio-projets{
-    padding: 40px 10%;
-
-    h2{
-        margin-bottom: 10px;
-        font-size: 24px;
-    }
-
-    p{
-        margin-top: 40px;
-    }
-}
-
 
 /* --- MEDIA QUERIES --- */
 
-/* MOBILE (Moins de 768px) */
+/* MOBILE */
 @media (max-width: 767px) {
+    .navbar ul {
+        gap: 15px;
+    }
+
     .top-section {
         flex-direction: column-reverse; 
         padding: 40px 5%;
-        text-align: center;
-        gap: 30px;
+        text-align: center; 
     }
 
     .page-title {
         width: 100%;
-        align-items: center;
+        align-items: center; 
+    }
+
+    .introduction-section, .about-portfolio-projets {
+        padding: 30px 5%; 
     }
 
     .block {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 }
 
-/* TABLETTE (Entre 768px et 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .top-section {
-        padding: 60px 2%; 
-    }
-    
-    .block {
-        width: 300px;
-        height: 300px;
-        min-width: 300px;
-        min-height: 300px;
-    }
-}
-
-/* DESKTOP (992px et plus) */
+/* TABLETTE & DESKTOP  */
 @media (min-width: 992px) {
     .block {
         width: 360px;
         height: 360px;
-        min-width: 360px;
-        min-height: 360px;
     }
 }

@@ -8,10 +8,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 h1 {
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
-    font-size: 48px;
+    font-size: clamp(32px, 8vw, 48px);
     color: #260101;
     margin-top: 2.8rem;
 }
@@ -69,14 +74,15 @@ ul {
 .top-img-txt {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .page-title {
-    flex: 1;
-    text-align: left;
-    margin-left: 20rem;
-    margin-top: 7rem;   
+    flex: 0 1 auto;
+    text-align: left; 
+    margin: 20px;
 }
 
 .face {
@@ -87,10 +93,8 @@ ul {
 }
 
 .introduction-section {
-    padding: 50px 50px;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    
+    padding: 40px 15%;
+    text-align: center;
 }   
 
 img {
@@ -100,10 +104,8 @@ img {
 }
 
 .skills-section {
-    width: 90%;
-    margin: 80px auto;
-    align-items: center;
-    margin-left: 10rem;
+    width: 80%;
+    margin: 60px auto;
 }
 
 .what-i-do {
@@ -111,8 +113,7 @@ img {
     font-weight: 700;
     color: #4b0a0a;
     text-align: left;
-    margin-bottom: 100px;
-    margin-left: 180px; 
+    margin-bottom: 40px;
 }
 
 
@@ -149,8 +150,8 @@ img {
 .skills-icons {
     display: flex;
     align-items: center;
-    gap: 100px;
-    margin-left: 100px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .skill {
@@ -182,15 +183,19 @@ h2{
     flex-direction: column; 
     align-items: center;    
     width: fit-content;
-    margin-right: 11rem;
-    gap: 15px;    
-    margin-top: -30px; 
+    gap: 0px;    
+}
+
+#canvas {
+    max-width: 100%;
+    height: auto;
+    background-color: #eee;
+    display: block;
 }
 
 #cta {
     padding: 0;
     cursor: pointer;
-    margin-top: -50px;
     background: none;
     border: none;
     overflow: hidden;
@@ -198,6 +203,7 @@ h2{
     width: 160px;
     height: 40px;
     border-radius: 10px;
+    margin-top: -15px;
 }
 
 .grid {
@@ -237,4 +243,45 @@ h2{
 .canvas{
     width: 300px;
     height: 300px;
+}
+
+/* ---  MOBILE --- */
+@media (max-width: 768px) {
+    
+    .top-img-txt {
+        flex-direction: column; 
+        text-align: center;
+        gap: 15px;
+    }
+    
+
+    .introduction-section {
+        padding: 40px 5%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-label {
+        flex-direction: column;
+    }
+
+    .skills-title {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+    }
+
+    .vertical-line {
+        width: 100px;
+        height: 2px;
+    }
+
+    .skills-icons {
+        justify-content: center;
+    }
+
+    #cta {
+        margin-top: 5px;
+    }
 }
