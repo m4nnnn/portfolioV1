@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #260101;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+header{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    background-color: transparent;
+    color: #260101;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: bold;    
+}
+
+.top-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.top-img-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-title {
+    flex: 1;
+    text-align: left;
+    margin-left: 20rem;
+    margin-top: 7rem;   
+}
+
+.face {
+    flex: 1;
+    max-width: 25%;
+    margin-right: 20rem;
+
+}
+
+.introduction-section {
+    padding: 50px 50px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}   
+
+img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-media-section {
+    width: 90%;
+    margin: 80px auto;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 80px;
+}
+
+.social-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.social-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #4b0a0a;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 150px;
+    background-color: #4b0a0a;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-left: 150px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social img {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}   
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #260101;
+    margin-bottom: 20px;
+}
+
+
+.contact-section {
+    width: 90%;
+    margin: 80px auto;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+
+
+.form-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.form-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #4b0a0a;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.vertical-line-form{
+    width: 2px;
+    height: 150px;
+    background-color: #4b0a0a;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 150px;
+    width: 50%;
+}
+
+.form-button {
+    width: 100px;
+    padding: 10px;
+    background-color: #4b0a0a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-input, .form-textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #260101;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #260101;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+header{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    background-color: transparent;
+    color: #260101;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: bold;    
+}
+
+
+.top-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.top-img-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-title {
+    flex: 1;
+    text-align: left;
+    margin-left: 20rem;
+    margin-top: 3rem;
+
+}
+
+.top-txt{
+    margin-top: 5rem;
+}
+
+.face {
+    flex: 1;
+    max-width: 25%;
+    margin-right: 20rem;
+
+}
+
+.introduction-section {
+    padding: 50px 50px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}   
+
+
+.services-section {
+    padding: 50px 50px;
+    background-color: #ffffff;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.services-list {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;  
+}
+
+.link-contact-page{
+    text-decoration: underline;
+    color: #59040C;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+a{
+    color: #59040C;
+    cursor: pointer;
+}

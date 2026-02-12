@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #260101;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #260101;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #260101;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+
+li{
+    list-style: none;
+    color : #260101;
+}
+
+header{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    background-color: transparent;
+    color: #260101;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: bold;
+        
+}
+
+.top-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.face {
+    flex: 1;
+    max-width: 25%;
+    margin-right: 20rem;
+
+}
+
+.top-img-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-title {
+    flex: 1;
+    text-align: left;
+    margin-left: 20rem;
+    margin-top: 7rem;   
+}
+
+.design-title {
+    flex: 1;
+    max-width: 30%;
+    height: auto;
+    margin-right: 30rem;
+    margin-left: 5px;
+}
+
+a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #260101;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+    
+
+
+.year-projects {
+    flex-direction: column;
+    align-items: right;
+    margin-bottom: 40px;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 15rem;
+}
+
+.project-dscp {
+    max-width: 70%;
+    margin-right: 10rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.year{
+    text-align: left;
+    margin-left: 15rem;
+    margin-bottom: 20px;
+}
+
+.projects, .project-dscp::before{
+    content: '→ ';
+}
