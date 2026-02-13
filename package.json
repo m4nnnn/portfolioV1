@@ -1,0 +1,29 @@
+{
+  "name": "portfolioproject",
+  "version": "1.0.0",
+  "description": "Ce portfolio est un projet vivant que j'enrichis au fil de ma formation. Il regroupe les compétences acquises lors de mon cursus ainsi que les technologies explorées en autodidacte sur mon temps libre.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint '/*.css'",
+    "lint:html": "htmlhint '/*.html'",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4nnnn/portfolioV1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/m4nnnn/portfolioV1/issues"
+  },
+  "homepage": "https://github.com/m4nnnn/portfolioV1#readme",
+  "devDependencies": {
+    "stylelint": "^17.2.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
