@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js": "eslint .",
-    "lint:css": "stylelint '/*.css'",
-    "lint:html": "htmlhint '/*.html'",
-    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+    "lint:html": "htmlhint \"src/*.html\"",
+    "lint:css": "stylelint \"src/css/*.css\"",
+    "lint:js": "eslint \"src/js/*.js\"",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js"
   },
   "repository": {
     "type": "git",
